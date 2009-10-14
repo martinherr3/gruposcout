@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D739A9A6-0CC2-490B-AC96-05CB6EFFB083}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Principal.My.MyApplication</StartupObject>
+    <RootNamespace>Principal</RootNamespace>
+    <AssemblyName>Principal</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Principal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Principal.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\ABMGenerico.designer.vb">
+      <DependentUpon>ABMGenerico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMGenerico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAbmBeneficiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAbmBeneficiario.Designer.vb">
+      <DependentUpon>FrmAbmBeneficiario.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMElementos.Designer.vb">
+      <DependentUpon>frmABMElementos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMElementos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMEquipos.Designer.vb">
+      <DependentUpon>frmABMEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmABMRama.Designer.vb">
+      <DependentUpon>frmABMRama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmABMRama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rutinas.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\ABMGenerico.resx">
+      <DependentUpon>ABMGenerico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAbmBeneficiario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAbmBeneficiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMElementos.resx">
+      <DependentUpon>frmABMElementos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMEquipos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmABMEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmABMRama.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmABMRama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconos\accept.bmp" />
+    <Content Include="Iconos\add.png" />
+    <Content Include="Iconos\ar.png" />
+    <Content Include="Iconos\arrow_down.png" />
+    <Content Include="Iconos\arrow_left.png" />
+    <Content Include="Iconos\arrow_right.png" />
+    <Content Include="Iconos\arrow_up.png" />
+    <Content Include="Iconos\building.png" />
+    <Content Include="Iconos\building_add.png" />
+    <Content Include="Iconos\calendar.png" />
+    <Content Include="Iconos\cancel.png" />
+    <Content Include="Iconos\database.png" />
+    <Content Include="Iconos\database_refresh.png" />
+    <Content Include="Iconos\database_save.png" />
+    <Content Include="Iconos\database_table.png" />
+    <Content Include="Iconos\delete.bmp" />
+    <Content Include="Iconos\disk.png" />
+    <Content Include="Iconos\door_open.png" />
+    <Content Include="Iconos\folder_database.png" />
+    <Content Include="Iconos\folder_page.png" />
+    <Content Include="Iconos\group.png" />
+    <Content Include="Iconos\key.png" />
+    <Content Include="Iconos\lightbulb.png" />
+    <Content Include="Iconos\magnifier.png" />
+    <Content Include="Iconos\money.png" />
+    <Content Include="Iconos\page_add.png" />
+    <Content Include="Iconos\page_delete.png" />
+    <Content Include="Iconos\page_edit.png" />
+    <Content Include="Iconos\page_white_excel.png" />
+    <Content Include="Iconos\pencil.png" />
+    <Content Include="Iconos\printer.png" />
+    <Content Include="Iconos\shield.png" />
+    <Content Include="Iconos\style.png" />
+    <Content Include="Iconos\style_add.png" />
+    <Content Include="Iconos\time.png" />
+    <Content Include="Iconos\user_add.png" />
+    <Content Include="Iconos\user_green.png" />
+    <Content Include="Iconos\user_orange.png" />
+    <Content Include="Iconos\user_suit.png" />
+    <Content Include="Iconos\world.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
