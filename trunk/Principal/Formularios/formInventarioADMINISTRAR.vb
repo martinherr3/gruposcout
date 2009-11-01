@@ -47,13 +47,53 @@ Public Class formInventarioADMINISTRAR
     End Sub
 
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
+        Dim tabla As New Data.DataTable
+        Dim sql As String
+        
+        sql = " select Elementos.idElementos as Codigo , Elementos.Nombre as Elementos , Estados.Nombre as Estado  From Elementos, Estados Where Elementos.idEstado = Estados.id"
+        tabla = cargarTablaComboConConsulta(sql)
+        Me.GrillaElementos.DataSource = tabla
+
+        Me.btnModificar.Enabled = False
+        Me.btnNuevo.Enabled = False
+        Me.btnGuardar.Enabled = True
         Me.txtdescripcion.ReadOnly = False
         Me.txtdescripcion.BackColor = Color.White
         Me.cboRama.Enabled = True
         Me.cboRama.BackColor = Color.White
         Me.txtCantidad.ReadOnly = False
         Me.txtCantidad.BackColor = Color.White
+        Me.btnAgregar.Enabled = True
+        Me.txtCantidad.Focus()
 
 
+
+
+    End Sub
+
+    Private Sub GrillaElementos_SelectionChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GrillaElementos.SelectionChanged
+        Me.txtNombreElemento.Text = Me.GrillaElementos.SelectedCells(2).Value
+        Me.txtEstadoElemento.Text = Me.GrillaElementos.SelectedCells(3).Value
+        Me.txtCodigo.Text = Me.GrillaElementos.SelectedCells(1).Value
+        'Me.txtCantidad.Text = Me.GrillaElementos.SelectedCells(3).Value
+        Me.txtCantidad.Text = ""
+        Me.txtCantidad.Focus()
+
+
+    End Sub
+
+    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
+        Dim fila As DataGridViewRow
+        If Me.txtCantidad.Text <> "" Then
+            For Each fila In GrillaElementos.Rows
+                If fila.Cells("Codigo").Value = Me.txtCodigo.Text Then
+                    fila.Cells("Cantidad").Value = Me.txtCantidad.Text
+                End If
+            Next
+        Else
+            MessageBox.Show("No se Ingreso la Cantidad del Elemento.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Me.txtCantidad.Focus()
+
+        End If
     End Sub
 End Class
