@@ -41,24 +41,30 @@ Partial Class formInventarioADMINISTRAR
         Me.txtFecha = New System.Windows.Forms.TextBox
         Me.Label4 = New System.Windows.Forms.Label
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txtNombreElemento = New System.Windows.Forms.TextBox
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtEstadoElemento = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
         Me.txtCantidad = New System.Windows.Forms.TextBox
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.txtEstadoElemento = New System.Windows.Forms.TextBox
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.txtNombreElemento = New System.Windows.Forms.TextBox
+        Me.GrillaElementos = New System.Windows.Forms.DataGridView
+        Me.btnAgregar = New System.Windows.Forms.Button
+        Me.Label8 = New System.Windows.Forms.Label
+        Me.txtCodigo = New System.Windows.Forms.TextBox
+        Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Elementos = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.GBFiltroBusqueda.SuspendLayout()
         Me.GbListado.SuspendLayout()
         CType(Me.GrillaListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FrameDatos.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GrillaElementos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancelar
         '
-        Me.btnCancelar.Enabled = False
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.Principal.My.Resources.Resources.cancel
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
@@ -187,6 +193,7 @@ Partial Class formInventarioADMINISTRAR
         'txtdescripcion
         '
         Me.txtdescripcion.BackColor = System.Drawing.SystemColors.Info
+        Me.txtdescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtdescripcion.Location = New System.Drawing.Point(95, 19)
         Me.txtdescripcion.Multiline = True
         Me.txtdescripcion.Name = "txtdescripcion"
@@ -297,13 +304,16 @@ Partial Class formInventarioADMINISTRAR
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.txtCodigo)
+        Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtEstadoElemento)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtNombreElemento)
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.GrillaElementos)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(10, 349)
         Me.GroupBox1.Name = "GroupBox1"
@@ -312,64 +322,10 @@ Partial Class formInventarioADMINISTRAR
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Elementos"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(341, 38)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 13)
-        Me.Label5.TabIndex = 33
-        Me.Label5.Text = "Nombre Elemento:"
-        '
-        'txtNombreElemento
-        '
-        Me.txtNombreElemento.BackColor = System.Drawing.SystemColors.Info
-        Me.txtNombreElemento.Location = New System.Drawing.Point(457, 35)
-        Me.txtNombreElemento.MaxLength = 10
-        Me.txtNombreElemento.Name = "txtNombreElemento"
-        Me.txtNombreElemento.ReadOnly = True
-        Me.txtNombreElemento.Size = New System.Drawing.Size(249, 20)
-        Me.txtNombreElemento.TabIndex = 14
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.DataGridView1.Location = New System.Drawing.Point(8, 19)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 20
-        Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(322, 139)
-        Me.DataGridView1.TabIndex = 13
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(345, 64)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 13)
-        Me.Label6.TabIndex = 35
-        Me.Label6.Text = "Estado Elemento:"
-        '
-        'txtEstadoElemento
-        '
-        Me.txtEstadoElemento.BackColor = System.Drawing.SystemColors.Info
-        Me.txtEstadoElemento.Location = New System.Drawing.Point(457, 61)
-        Me.txtEstadoElemento.MaxLength = 10
-        Me.txtEstadoElemento.Name = "txtEstadoElemento"
-        Me.txtEstadoElemento.ReadOnly = True
-        Me.txtEstadoElemento.Size = New System.Drawing.Size(249, 20)
-        Me.txtEstadoElemento.TabIndex = 34
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(390, 90)
+        Me.Label7.Location = New System.Drawing.Point(451, 109)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(61, 13)
         Me.Label7.TabIndex = 37
@@ -378,12 +334,133 @@ Partial Class formInventarioADMINISTRAR
         'txtCantidad
         '
         Me.txtCantidad.BackColor = System.Drawing.SystemColors.Info
-        Me.txtCantidad.Location = New System.Drawing.Point(457, 87)
+        Me.txtCantidad.Location = New System.Drawing.Point(518, 106)
         Me.txtCantidad.MaxLength = 10
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.ReadOnly = True
         Me.txtCantidad.Size = New System.Drawing.Size(94, 20)
         Me.txtCantidad.TabIndex = 36
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(406, 83)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(106, 13)
+        Me.Label6.TabIndex = 35
+        Me.Label6.Text = "Estado Elemento:"
+        '
+        'txtEstadoElemento
+        '
+        Me.txtEstadoElemento.BackColor = System.Drawing.SystemColors.Info
+        Me.txtEstadoElemento.Location = New System.Drawing.Point(518, 80)
+        Me.txtEstadoElemento.MaxLength = 10
+        Me.txtEstadoElemento.Name = "txtEstadoElemento"
+        Me.txtEstadoElemento.ReadOnly = True
+        Me.txtEstadoElemento.Size = New System.Drawing.Size(188, 20)
+        Me.txtEstadoElemento.TabIndex = 34
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(402, 57)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(110, 13)
+        Me.Label5.TabIndex = 33
+        Me.Label5.Text = "Nombre Elemento:"
+        '
+        'txtNombreElemento
+        '
+        Me.txtNombreElemento.BackColor = System.Drawing.SystemColors.Info
+        Me.txtNombreElemento.Location = New System.Drawing.Point(518, 54)
+        Me.txtNombreElemento.MaxLength = 10
+        Me.txtNombreElemento.Name = "txtNombreElemento"
+        Me.txtNombreElemento.ReadOnly = True
+        Me.txtNombreElemento.Size = New System.Drawing.Size(188, 20)
+        Me.txtNombreElemento.TabIndex = 14
+        '
+        'GrillaElementos
+        '
+        Me.GrillaElementos.AllowUserToAddRows = False
+        Me.GrillaElementos.AllowUserToDeleteRows = False
+        Me.GrillaElementos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.GrillaElementos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.GrillaElementos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Elementos, Me.Estado, Me.Cantidad})
+        Me.GrillaElementos.Location = New System.Drawing.Point(8, 19)
+        Me.GrillaElementos.MultiSelect = False
+        Me.GrillaElementos.Name = "GrillaElementos"
+        Me.GrillaElementos.ReadOnly = True
+        Me.GrillaElementos.RowHeadersWidth = 20
+        Me.GrillaElementos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.GrillaElementos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.GrillaElementos.Size = New System.Drawing.Size(390, 139)
+        Me.GrillaElementos.TabIndex = 13
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.Enabled = False
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Image = Global.Principal.My.Resources.Resources.add
+        Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAgregar.Location = New System.Drawing.Point(518, 135)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(116, 25)
+        Me.btnAgregar.TabIndex = 47
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(462, 31)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(50, 13)
+        Me.Label8.TabIndex = 49
+        Me.Label8.Text = "Codigo:"
+        '
+        'txtCodigo
+        '
+        Me.txtCodigo.BackColor = System.Drawing.SystemColors.Info
+        Me.txtCodigo.Location = New System.Drawing.Point(518, 28)
+        Me.txtCodigo.MaxLength = 10
+        Me.txtCodigo.Name = "txtCodigo"
+        Me.txtCodigo.ReadOnly = True
+        Me.txtCodigo.Size = New System.Drawing.Size(188, 20)
+        Me.txtCodigo.TabIndex = 48
+        '
+        'Codigo
+        '
+        Me.Codigo.DataPropertyName = "Codigo"
+        Me.Codigo.HeaderText = "Codigo Elemento"
+        Me.Codigo.Name = "Codigo"
+        Me.Codigo.ReadOnly = True
+        Me.Codigo.Visible = False
+        Me.Codigo.Width = 125
+        '
+        'Elementos
+        '
+        Me.Elementos.DataPropertyName = "Elementos"
+        Me.Elementos.HeaderText = "Elemento"
+        Me.Elementos.Name = "Elementos"
+        Me.Elementos.ReadOnly = True
+        Me.Elementos.Width = 82
+        '
+        'Estado
+        '
+        Me.Estado.DataPropertyName = "Estado"
+        Me.Estado.HeaderText = "Estado"
+        Me.Estado.Name = "Estado"
+        Me.Estado.ReadOnly = True
+        Me.Estado.Width = 69
+        '
+        'Cantidad
+        '
+        Me.Cantidad.DataPropertyName = "Cantidad"
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        Me.Cantidad.ReadOnly = True
+        Me.Cantidad.Width = 80
         '
         'formInventarioADMINISTRAR
         '
@@ -417,7 +494,7 @@ Partial Class formInventarioADMINISTRAR
         Me.FrameDatos.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GrillaElementos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -450,5 +527,12 @@ Partial Class formInventarioADMINISTRAR
     Friend WithEvents txtEstadoElemento As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtNombreElemento As System.Windows.Forms.TextBox
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents GrillaElementos As System.Windows.Forms.DataGridView
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents txtCodigo As System.Windows.Forms.TextBox
+    Friend WithEvents Codigo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Elementos As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Estado As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
