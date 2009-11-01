@@ -51,9 +51,9 @@ Partial Class frmABMEquipos
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 621)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 506)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(836, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(780, 22)
         Me.StatusStrip1.TabIndex = 43
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -64,19 +64,19 @@ Partial Class frmABMEquipos
         Me.GBFiltroBusqueda.Controls.Add(Me.Label1)
         Me.GBFiltroBusqueda.Controls.Add(Me.btnBuscar)
         Me.GBFiltroBusqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBFiltroBusqueda.Location = New System.Drawing.Point(47, 249)
+        Me.GBFiltroBusqueda.Location = New System.Drawing.Point(12, 249)
         Me.GBFiltroBusqueda.Name = "GBFiltroBusqueda"
-        Me.GBFiltroBusqueda.Size = New System.Drawing.Size(747, 82)
+        Me.GBFiltroBusqueda.Size = New System.Drawing.Size(756, 59)
         Me.GBFiltroBusqueda.TabIndex = 33
         Me.GBFiltroBusqueda.TabStop = False
         Me.GBFiltroBusqueda.Text = "Filtro de Busqueda"
         '
         'TxtFiltro
         '
-        Me.TxtFiltro.Location = New System.Drawing.Point(249, 14)
+        Me.TxtFiltro.Location = New System.Drawing.Point(262, 15)
         Me.TxtFiltro.MaxLength = 10
         Me.TxtFiltro.Name = "TxtFiltro"
-        Me.TxtFiltro.Size = New System.Drawing.Size(177, 20)
+        Me.TxtFiltro.Size = New System.Drawing.Size(338, 20)
         Me.TxtFiltro.TabIndex = 13
         '
         'CboBusqueda
@@ -102,7 +102,7 @@ Partial Class frmABMEquipos
         '
         Me.btnBuscar.Image = Global.Principal.My.Resources.Resources.magnifier
         Me.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnBuscar.Location = New System.Drawing.Point(326, 40)
+        Me.btnBuscar.Location = New System.Drawing.Point(631, 14)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(100, 32)
         Me.btnBuscar.TabIndex = 10
@@ -114,9 +114,9 @@ Partial Class frmABMEquipos
         '
         Me.GbListado.Controls.Add(Me.GrillaListado)
         Me.GbListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GbListado.Location = New System.Drawing.Point(36, 36)
+        Me.GbListado.Location = New System.Drawing.Point(12, 36)
         Me.GbListado.Name = "GbListado"
-        Me.GbListado.Size = New System.Drawing.Size(763, 207)
+        Me.GbListado.Size = New System.Drawing.Size(754, 207)
         Me.GbListado.TabIndex = 41
         Me.GbListado.TabStop = False
         Me.GbListado.Text = "Datos Busqueda"
@@ -134,7 +134,7 @@ Partial Class frmABMEquipos
         Me.GrillaListado.RowHeadersWidth = 20
         Me.GrillaListado.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.GrillaListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.GrillaListado.Size = New System.Drawing.Size(733, 168)
+        Me.GrillaListado.Size = New System.Drawing.Size(737, 168)
         Me.GrillaListado.TabIndex = 12
         '
         'FrameDatos
@@ -148,9 +148,9 @@ Partial Class frmABMEquipos
         Me.FrameDatos.Controls.Add(Me.Label6)
         Me.FrameDatos.Controls.Add(Me.Label3)
         Me.FrameDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FrameDatos.Location = New System.Drawing.Point(47, 335)
+        Me.FrameDatos.Location = New System.Drawing.Point(12, 314)
         Me.FrameDatos.Name = "FrameDatos"
-        Me.FrameDatos.Size = New System.Drawing.Size(752, 202)
+        Me.FrameDatos.Size = New System.Drawing.Size(754, 134)
         Me.FrameDatos.TabIndex = 35
         Me.FrameDatos.TabStop = False
         Me.FrameDatos.Text = "Datos"
@@ -233,7 +233,7 @@ Partial Class frmABMEquipos
         '
         Me.lblAccion.AutoSize = True
         Me.lblAccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAccion.Location = New System.Drawing.Point(256, 2)
+        Me.lblAccion.Location = New System.Drawing.Point(245, 2)
         Me.lblAccion.Name = "lblAccion"
         Me.lblAccion.Size = New System.Drawing.Size(268, 31)
         Me.lblAccion.TabIndex = 34
@@ -245,7 +245,7 @@ Partial Class frmABMEquipos
         Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Image = Global.Principal.My.Resources.Resources.cancel
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCancelar.Location = New System.Drawing.Point(558, 543)
+        Me.btnCancelar.Location = New System.Drawing.Point(526, 454)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(110, 42)
         Me.btnCancelar.TabIndex = 42
@@ -258,7 +258,7 @@ Partial Class frmABMEquipos
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.Image = Global.Principal.My.Resources.Resources.door_open
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSalir.Location = New System.Drawing.Point(686, 543)
+        Me.btnSalir.Location = New System.Drawing.Point(654, 454)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(110, 42)
         Me.btnSalir.TabIndex = 40
@@ -271,7 +271,7 @@ Partial Class frmABMEquipos
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Image = Global.Principal.My.Resources.Resources.delete
         Me.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEliminar.Location = New System.Drawing.Point(426, 543)
+        Me.btnEliminar.Location = New System.Drawing.Point(394, 454)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(117, 42)
         Me.btnEliminar.TabIndex = 39
@@ -284,7 +284,7 @@ Partial Class frmABMEquipos
         Me.btnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNuevo.Image = Global.Principal.My.Resources.Resources.add
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(45, 543)
+        Me.btnNuevo.Location = New System.Drawing.Point(13, 454)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(116, 42)
         Me.btnNuevo.TabIndex = 36
@@ -297,7 +297,7 @@ Partial Class frmABMEquipos
         Me.btnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Image = Global.Principal.My.Resources.Resources.page_edit
         Me.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnModificar.Location = New System.Drawing.Point(290, 543)
+        Me.btnModificar.Location = New System.Drawing.Point(258, 454)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(121, 42)
         Me.btnModificar.TabIndex = 38
@@ -311,7 +311,7 @@ Partial Class frmABMEquipos
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.Image = Global.Principal.My.Resources.Resources.disk
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 543)
+        Me.btnGuardar.Location = New System.Drawing.Point(135, 454)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(117, 42)
         Me.btnGuardar.TabIndex = 37
@@ -324,7 +324,7 @@ Partial Class frmABMEquipos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
-        Me.ClientSize = New System.Drawing.Size(836, 643)
+        Me.ClientSize = New System.Drawing.Size(780, 528)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.GBFiltroBusqueda)
@@ -336,8 +336,11 @@ Partial Class frmABMEquipos
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnGuardar)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmABMEquipos"
-        Me.Text = "frmABMEquipo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "GESTION DE EQUIPOS"
         Me.GBFiltroBusqueda.ResumeLayout(False)
         Me.GBFiltroBusqueda.PerformLayout()
         Me.GbListado.ResumeLayout(False)

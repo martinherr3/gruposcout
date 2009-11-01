@@ -113,11 +113,11 @@ Public Class Principal
     End Sub
 
     Private Sub GestionDeInventarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GestionDeInventarioToolStripMenuItem.Click
-        Dim frm As frmABMElementos
-        frm = New frmABMElementos
+        Dim frmInventario As formInventarioADMINISTRAR
+        frmInventario = New formInventarioADMINISTRAR
 
-        frm._tabla = "Elemento"
-        frm.ShowDialog()
+        frmInventario.ShowDialog()
+
     End Sub
 
     Private Sub ABMElementosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ABMElementosToolStripMenuItem.Click
