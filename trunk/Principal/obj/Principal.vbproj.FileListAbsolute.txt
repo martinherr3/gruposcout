@@ -93,3 +93,19 @@ D:\Sistema\TPFinal\Principal\obj\Debug\Principal.frmABMElementos.resources
 D:\Sistema\TPFinal\Principal\obj\Debug\Principal.frmABMEquipos.resources
 D:\Sistema\TPFinal\Principal\obj\Debug\Principal.frmABMRama.resources
 D:\Sistema\TPFinal\Principal\obj\Debug\Principal.Principal.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.exe
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.xml
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.pdb
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\bin\Debug\Principal.exe
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\bin\Debug\Principal.pdb
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\bin\Debug\Principal.xml
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\ResolveAssemblyReference.cache
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.ABMGenerico.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.FrmAbmBeneficiario.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.frmABMElementos.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.frmABMEquipos.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.frmABMRama.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.Principal.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.Resources.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.vbproj.GenerateResource.Cache
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.formInventarioADMINISTRAR.resources
