@@ -143,4 +143,18 @@ Public Class Principal
         frm._tabla = "Rama"
         frm.ShowDialog()
     End Sub
+
+    Private Sub GestionDePagosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GestionDePagosToolStripMenuItem.Click
+        Dim frm As GestionDePagos
+        frm = New GestionDePagos
+
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub GeneradorDeExpensasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GeneradorDeExpensasToolStripMenuItem.Click
+        Dim frm As GeneradorDeExpensas
+        frm = New GeneradorDeExpensas
+
+        frm.ShowDialog()
+    End Sub
 End Class

@@ -93,6 +93,26 @@ D:\Sistema\TPFinal\Principal\obj\Debug\Principal.frmABMElementos.resources
 D:\Sistema\TPFinal\Principal\obj\Debug\Principal.frmABMEquipos.resources
 D:\Sistema\TPFinal\Principal\obj\Debug\Principal.frmABMRama.resources
 D:\Sistema\TPFinal\Principal\obj\Debug\Principal.Principal.resources
+<<<<<<< .mine
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.exe
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.xml
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.pdb
+D:\Sistema\TPPAVI\Principal\bin\Debug\Principal.exe
+D:\Sistema\TPPAVI\Principal\bin\Debug\Principal.pdb
+D:\Sistema\TPPAVI\Principal\bin\Debug\Principal.xml
+D:\Sistema\TPPAVI\Principal\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.ABMGenerico.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.FrmAbmBeneficiario.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.frmABMElementos.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.frmABMEquipos.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.frmABMRama.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.Principal.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.Resources.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.vbproj.GenerateResource.Cache
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.GeneradorDeExpensas.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.GestionDePagos.resources
+D:\Sistema\TPPAVI\Principal\obj\Debug\Principal.ResumenCta.resources
+=======
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.exe
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.xml
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.pdb
@@ -109,3 +129,4 @@ G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.P
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.Resources.resources
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.vbproj.GenerateResource.Cache
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.formInventarioADMINISTRAR.resources
+>>>>>>> .r6

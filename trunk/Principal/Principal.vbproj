@@ -88,10 +88,28 @@
     <Compile Include="Formularios\frmABMRama.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\GeneradorDeExpensas.Designer.vb">
+      <DependentUpon>GeneradorDeExpensas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GeneradorDeExpensas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionDePagos.Designer.vb">
+      <DependentUpon>GestionDePagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionDePagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Principal.Designer.vb">
       <DependentUpon>Principal.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ResumenCta.Designer.vb">
+      <DependentUpon>ResumenCta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ResumenCta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Rutinas.vb" />
@@ -136,9 +154,21 @@
       <SubType>Designer</SubType>
       <DependentUpon>frmABMRama.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GeneradorDeExpensas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneradorDeExpensas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionDePagos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GestionDePagos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ResumenCta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResumenCta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

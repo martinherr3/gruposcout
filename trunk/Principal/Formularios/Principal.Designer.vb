@@ -43,6 +43,7 @@ Partial Class Principal
         Me.StatusStrip = New System.Windows.Forms.StatusStrip
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.GeneradorDeExpensasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -140,7 +141,7 @@ Partial Class Principal
         '
         'SalirToolStripMenuItem
         '
-        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionDePagosToolStripMenuItem})
+        Me.SalirToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionDePagosToolStripMenuItem, Me.GeneradorDeExpensasToolStripMenuItem})
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.SalirToolStripMenuItem.Text = "Pagos"
@@ -185,6 +186,12 @@ Partial Class Principal
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(40, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
+        'GeneradorDeExpensasToolStripMenuItem
+        '
+        Me.GeneradorDeExpensasToolStripMenuItem.Name = "GeneradorDeExpensasToolStripMenuItem"
+        Me.GeneradorDeExpensasToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.GeneradorDeExpensasToolStripMenuItem.Text = "Generador De Expensas"
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -228,5 +235,6 @@ Partial Class Principal
     Friend WithEvents InventarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GestionDeInventarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GeneradorDeExpensasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
