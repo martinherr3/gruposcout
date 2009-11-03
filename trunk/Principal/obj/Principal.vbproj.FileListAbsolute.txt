@@ -130,3 +130,6 @@ G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.R
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.vbproj.GenerateResource.Cache
 G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.formInventarioADMINISTRAR.resources
 >>>>>>> .r6
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.GeneradorDeExpensas.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.GestionDePagos.resources
+G:\Documents and Settings\Javier\Escritorio\PAV1\Principal\obj\Debug\Principal.ResumenCta.resources

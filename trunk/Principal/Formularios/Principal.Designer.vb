@@ -37,13 +37,13 @@ Partial Class Principal
         Me.GestionDeBeneficiariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestionDePagosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.GeneradorDeExpensasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.GestionDeInventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.StatusStrip = New System.Windows.Forms.StatusStrip
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.GeneradorDeExpensasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -149,8 +149,14 @@ Partial Class Principal
         'GestionDePagosToolStripMenuItem
         '
         Me.GestionDePagosToolStripMenuItem.Name = "GestionDePagosToolStripMenuItem"
-        Me.GestionDePagosToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.GestionDePagosToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.GestionDePagosToolStripMenuItem.Text = "Gestion de Pagos"
+        '
+        'GeneradorDeExpensasToolStripMenuItem
+        '
+        Me.GeneradorDeExpensasToolStripMenuItem.Name = "GeneradorDeExpensasToolStripMenuItem"
+        Me.GeneradorDeExpensasToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
+        Me.GeneradorDeExpensasToolStripMenuItem.Text = "Generador De Expensas"
         '
         'InventarioToolStripMenuItem
         '
@@ -186,12 +192,6 @@ Partial Class Principal
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(40, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
         '
-        'GeneradorDeExpensasToolStripMenuItem
-        '
-        Me.GeneradorDeExpensasToolStripMenuItem.Name = "GeneradorDeExpensasToolStripMenuItem"
-        Me.GeneradorDeExpensasToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
-        Me.GeneradorDeExpensasToolStripMenuItem.Text = "Generador De Expensas"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -201,6 +201,8 @@ Partial Class Principal
         Me.Controls.Add(Me.StatusStrip)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Principal"
