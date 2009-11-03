@@ -30,6 +30,7 @@ Partial Class GeneradorDeExpensas
         Me.btnSalir = New System.Windows.Forms.Button
         Me.btnGenerar = New System.Windows.Forms.Button
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         CType(Me.TxtMes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TxtAnio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -138,12 +139,21 @@ Partial Class GeneradorDeExpensas
         Me.ProgressBar1.Size = New System.Drawing.Size(434, 20)
         Me.ProgressBar1.TabIndex = 32
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 179)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(536, 22)
+        Me.StatusStrip1.TabIndex = 33
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'GeneradorDeExpensas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
-        Me.ClientSize = New System.Drawing.Size(536, 276)
+        Me.ClientSize = New System.Drawing.Size(536, 201)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnGenerar)
@@ -155,6 +165,8 @@ Partial Class GeneradorDeExpensas
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "GeneradorDeExpensas"
         Me.Text = "GeneradorDeExpensas"
         CType(Me.TxtMes, System.ComponentModel.ISupportInitialize).EndInit()
@@ -174,4 +186,5 @@ Partial Class GeneradorDeExpensas
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents btnGenerar As System.Windows.Forms.Button
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
 End Class

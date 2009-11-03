@@ -35,6 +35,7 @@ Partial Class GestionDePagos
         Me.btnSalir = New System.Windows.Forms.Button
         Me.btnGrabar = New System.Windows.Forms.Button
         Me.BtnResCta = New System.Windows.Forms.Button
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         CType(Me.GrillaBeneficiarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GrillaCuotas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -186,12 +187,21 @@ Partial Class GestionDePagos
         Me.BtnResCta.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BtnResCta.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 413)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(536, 22)
+        Me.StatusStrip1.TabIndex = 37
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'GestionDePagos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
-        Me.ClientSize = New System.Drawing.Size(667, 487)
+        Me.ClientSize = New System.Drawing.Size(536, 435)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.BtnResCta)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DtFechaPago)
@@ -199,6 +209,8 @@ Partial Class GestionDePagos
         Me.Controls.Add(Me.btnGrabar)
         Me.Controls.Add(Me.GrillaCuotas)
         Me.Controls.Add(Me.GrillaBeneficiarios)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "GestionDePagos"
         Me.Text = "GsetionDePagos"
         CType(Me.GrillaBeneficiarios, System.ComponentModel.ISupportInitialize).EndInit()
@@ -223,4 +235,5 @@ Partial Class GestionDePagos
     Friend WithEvents DtFechaPago As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BtnResCta As System.Windows.Forms.Button
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
 End Class

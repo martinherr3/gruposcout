@@ -20,10 +20,11 @@ Partial Class ResumenCta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Grilla = New System.Windows.Forms.DataGridView
-        Me.btnSalir = New System.Windows.Forms.Button
         Me.idPago = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.FechaPagoReal = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Monto = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.btnSalir = New System.Windows.Forms.Button
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         CType(Me.Grilla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,19 +40,6 @@ Partial Class ResumenCta
         Me.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Grilla.Size = New System.Drawing.Size(508, 295)
         Me.Grilla.TabIndex = 0
-        '
-        'btnSalir
-        '
-        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Image = Global.Principal.My.Resources.Resources.door_open
-        Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSalir.Location = New System.Drawing.Point(414, 313)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(117, 42)
-        Me.btnSalir.TabIndex = 34
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnSalir.UseVisualStyleBackColor = True
         '
         'idPago
         '
@@ -74,17 +62,43 @@ Partial Class ResumenCta
         Me.Monto.Name = "Monto"
         Me.Monto.ReadOnly = True
         '
+        'btnSalir
+        '
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.Image = Global.Principal.My.Resources.Resources.door_open
+        Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSalir.Location = New System.Drawing.Point(414, 313)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(117, 42)
+        Me.btnSalir.TabIndex = 34
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 370)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(548, 22)
+        Me.StatusStrip1.TabIndex = 35
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'ResumenCta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 392)
+        Me.BackColor = System.Drawing.Color.Azure
+        Me.ClientSize = New System.Drawing.Size(548, 392)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.Grilla)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "ResumenCta"
         Me.Text = "ResumenCta"
         CType(Me.Grilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Grilla As System.Windows.Forms.DataGridView
@@ -92,4 +106,5 @@ Partial Class ResumenCta
     Friend WithEvents idPago As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaPagoReal As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Monto As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
 End Class
