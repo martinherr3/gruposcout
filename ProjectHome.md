@@ -1,0 +1,1 @@
+Sistema de informacion para gestionar un Grupo Scout
